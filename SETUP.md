@@ -3,7 +3,7 @@
 ## 1. Put the code into your Expo project
 In your `tsag-av` project folder (made with `create-expo-app`):
 1. **Delete** these template folders: `app`, `components`, `hooks`, `constants`, `scripts`
-2. **Copy** everything from this zip into the folder (app, components, lib, supabase, README.md, SETUP.md, .env.example, commit-steps.bat). Replace README.md if asked.
+2. **Copy** everything from this zip into the folder (app, components, lib, supabase, README.md, SETUP.md, commit-steps.bat). Replace README.md if asked.
 
 ## 2. Supabase database
 1. Supabase → your project → **SQL Editor** → New query
@@ -13,7 +13,7 @@ In your `tsag-av` project folder (made with `create-expo-app`):
    (so new users can log in immediately in the demo)
 
 ## 3. .env file
-Copy `.env.example` to a new file named `.env` and fill in:
+Create a new file named `.env` in the project folder with:
 ```
 EXPO_PUBLIC_SUPABASE_URL=https://xxxx.supabase.co
 EXPO_PUBLIC_SUPABASE_ANON_KEY=eyJ... (anon / publishable key)

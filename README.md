@@ -48,9 +48,10 @@ Trigger-ээр: хэрэглэгч өөрийгөө админ болгох, з�
 # 1. Хамаарлууд
 npm install
 
-# 2. .env үүсгэх
-cp .env.example .env      # Windows: copy .env.example .env
-# .env дотор Supabase URL болон anon түлхүүрээ бичнэ
+# 2. Төслийн хавтаст .env файл үүсгээд дараах 2 мөрийг бичнэ
+#    (Supabase → Project Settings → API Keys; зөвхөн anon түлхүүр, service_role ХЭЗЭЭ Ч биш)
+#    EXPO_PUBLIC_SUPABASE_URL=https://xxxxxxxx.supabase.co
+#    EXPO_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 
 # 3. Supabase SQL Editor дээр дарааллаар нь ажиллуулна
 #    supabase/schema.sql  → supabase/seed.sql
