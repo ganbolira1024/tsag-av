@@ -54,7 +54,7 @@ export default function Register() {
   return (
     <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
       <ScrollView contentContainerStyle={styles.container} keyboardShouldPersistTaps="handled">
-        <Input label="Овог нэр" value={form.full_name} onChangeText={set('full_name')} placeholder="Хулан" error={errors.full_name} />
+        <Input label="Овог нэр" value={form.full_name} onChangeText={set('full_name')} placeholder="Бат" error={errors.full_name} />
         <Input label="Утас" value={form.phone} onChangeText={set('phone')} keyboardType="number-pad" maxLength={8} placeholder="99112233" error={errors.phone} />
         <Input label="И-мэйл" value={form.email} onChangeText={set('email')} autoCapitalize="none" keyboardType="email-address" placeholder="name@mail.com" error={errors.email} />
         <Input label="Нууц үг" value={form.password} onChangeText={set('password')} secureTextEntry error={errors.password} />
